@@ -8,7 +8,7 @@ int main(){
 	cout<<"\nnombre reposteria: ";
 	getline(cin,stringval);
 	cout<<endl;
-	Reposteria*reposteria=new Reposteria(stringval,10000);
+	Reposteria*reposteria=new Reposteria(stringval,0);
 	
 	
 	
@@ -18,6 +18,7 @@ int main(){
 		switch(opcion){
 			case '1':
 			//clic
+				reposteria->clic();
 				break;
 			case '2':
 				//add granja

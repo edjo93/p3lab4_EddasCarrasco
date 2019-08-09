@@ -58,17 +58,14 @@
 			
 			void clic(){
 				
-				Templo*temp_templo=new Templo;
-				Granja*temp_granja;
-				Banco*temp_banco;
+				Templo*temp_templo=new Templo();
+				Granja*temp_granja=new Granja();
+				Banco*temp_banco=new Banco();
 				
 				
 				//calculo
 				numero_galletas+=findTemplo()*temp_templo->getProduccion_base()+findGranja()*temp_granja->getProduccion_base()+findBanco()*temp_banco->getProduccion_base()+1;
-				if(!edificios.empty()){
-					//producir
-					
-				}
+				
 			}
 			
 			int findTemplo(){
